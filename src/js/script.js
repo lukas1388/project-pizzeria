@@ -433,6 +433,7 @@
 
       thisCart.dom.deliveryFee.innerHTML = thisCart.deliveryFee;
       thisCart.dom.subtotalPrice.innerHTML = thisCart.subtotalPrice;
+      thisCart.dom.totalNumber.innerHTML = thisCart.totalNumber;
       
       for(let total of thisCart.dom.totalPrice){
         total.innerHTML = thisCart.totalPrice;
