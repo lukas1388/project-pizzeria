@@ -8,7 +8,7 @@ const app = {
     const thisApp = this;
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
-    thisApp.navLinks = document.querySelectorAll(select.widgets.nav.links);
+    thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
     const idFromHash = window.location.hash.replace('#/', '');
 
@@ -54,10 +54,9 @@ const app = {
   },
 
   initBooking: function(){
-    const thisApp = this;
 
-    thisApp.bookingWidget = document.querySelector(select.containerOf.booking);
-    new Booking(thisApp.bookingWidget);
+    const bookingWidget = document.querySelector(select.containerOf.booking);
+    new Booking(bookingWidget);
   },
 
   initMenu: function(){

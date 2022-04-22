@@ -33,19 +33,19 @@ export const select = {
       input: 'input[type="range"]',
       output: '.output',
     },
-    booking: {
-      peopleAmount: '.people-amount',
-      hoursAmount: '.hours-amount',
-      tables: '.floor-plan .table',
-    },
-    nav: {
-      links: '.main-nav a',
-    },
-    amount: {
-      input: 'input.amount',
-      linkDecrease: 'a[href="#less"]',
-      linkIncrease: 'a[href="#more"]',
-    },
+  },
+  booking: {
+    peopleAmount: '.people-amount',
+    hoursAmount: '.hours-amount',
+    tables: '.floor-plan .table',
+  },
+  nav: {
+    links: '.main-nav a',
+  },
+  amount: {
+    input: 'input.amount',
+    linkDecrease: 'a[href="#less"]',
+    linkIncrease: 'a[href="#more"]',
   },
   cart: {
     productList: '.cart__order-summary',
@@ -119,11 +119,6 @@ export const settings = {
     notRepeatParam: 'repeat=false',
     repeatParam: 'repeat_ne=false',
   },
-  // db: {
-  //   url: '//localhost:3131',
-  //   products: 'products',
-  //   orders: 'orders',
-  // },
 };
 
 export const templates = {
