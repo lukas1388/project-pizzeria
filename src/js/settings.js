@@ -96,15 +96,28 @@ export const settings = {
   cart: {
     defaultDeliveryFee: 20,
   },
+  hours: {
+    open: 12,
+    close: 24,
+  },
+  datePicker: {
+    maxDaysInFuture: 14,
+  },
   booking: {
-    loading: 'loading',
-    tableBooked: 'booked',
+    tableIdAttribute: 'data-table',
   },
-  nav: {
-    active: 'active',
-  },
-  pages: {
-    active: 'active',
+  db: {
+    products: 'products',
+    orders: 'orders',
+    url: '//localhost:3131',
+    product: 'product',
+    order: 'order',
+    booking: 'booking',
+    event: 'event',
+    dateStartParamKey: 'date_gte',
+    dateEndParamKey: 'date_lte',
+    notRepeatParam: 'repeat=false',
+    repeatParam: 'repeat_ne=false',
   },
   // db: {
   //   url: '//localhost:3131',
