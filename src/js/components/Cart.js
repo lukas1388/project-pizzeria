@@ -86,7 +86,6 @@ class Cart{
     } else {
       thisCart.totalPrice = thisCart.subtotalPrice + thisCart.deliveryFee;
     }
-    console.log(thisCart.dom.totalNumber);
     thisCart.dom.deliveryFee.innerHTML = thisCart.deliveryFee;
     thisCart.dom.subtotalPrice.innerHTML = thisCart.subtotalPrice;
     thisCart.dom.totalNumber.innerHTML = thisCart.totalNumber;
