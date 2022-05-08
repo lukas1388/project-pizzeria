@@ -206,19 +206,19 @@
     "events": [
       {
         "id": 1,
-        "date": "2021-01-01",
+        "date": "2022-05-10",
         "hour": "12:30",
         "table": 1,
         "repeat": "daily",
-        "duration": 4,
+        "duration": 2,
         "ppl": 3,
         "starters": []
       },
       {
         "id": 2,
-        "date": "2022-05-01",
-        "hour": "16:00",
-        "table": 3,
+        "date": "2022-05-08",
+        "hour": "20:00",
+        "table": 1,
         "repeat": false,
         "duration": 2,
         "ppl": 3,
@@ -226,8 +226,8 @@
       },
       {
         "id": 3,
-        "date": "2021-01-01",
-        "hour": "12:00",
+        "date": "2022-05-01",
+        "hour": "14:00",
         "table": 3,
         "repeat": "daily",
         "duration": 2,
@@ -236,7 +236,7 @@
       },
       {
         "id": 4,
-        "date": "2021-01-01",
+        "date": "2022-05-01",
         "hour": "13:00",
         "table": 2,
         "repeat": "daily",
@@ -246,7 +246,7 @@
       },
       {
         "id": 5,
-        "date": "2021-01-01",
+        "date": "2022-05-01",
         "hour": "18:00",
         "table": 2,
         "repeat": "daily",
@@ -258,9 +258,9 @@
     "bookings": [
        {
           "id": 1,
-          "date": "2022-05-01",
-          "hour": "16:00",
-          "table": 1,
+          "date": "2022-05-08",
+          "hour": "13:30",
+          "table": 3,
           "duration": 3,
           "ppl": 4,
           "starters": ["water"]
