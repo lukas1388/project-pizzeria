@@ -8,9 +8,6 @@ class AmountWidget extends BaseWidget{
 
     thisWidget.getElements(element);
     thisWidget.initActions();
-
-    // console.log('AmountWidget', thisWidget);
-    // console.log('constructor arguments', element); 
   }
 
   getElements(){
@@ -37,7 +34,6 @@ class AmountWidget extends BaseWidget{
     const thisWidget = this;
 
     thisWidget.dom.input.addEventListener('change', function(){
-      // thisWidget.setValue(thisWidget.dom.input.value);
       thisWidget.value = thisWidget.dom.input.value;
     });
 
