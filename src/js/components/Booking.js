@@ -10,7 +10,7 @@ class Booking{
 
     thisBooking.element = element;
 
-    thisBooking.selectedTable = [];
+    thisBooking.selectedTable = '';
 
     thisBooking.render(thisBooking.element);
     thisBooking.initWidgets();
@@ -150,7 +150,6 @@ class Booking{
 
     const clicked = event.target;
     const attr = clicked.getAttribute('data-table');
-    const index = -1;
 
     if(clicked.classList.contains('table')){
       if(!clicked.classList.contains('booked')){
@@ -159,11 +158,10 @@ class Booking{
             table.classList.remove('selected');
           }
           clicked.classList.add('selected');
-          thisBooking.selectedTable.splice(index, 1);
-          thisBooking.selectedTable.push(attr);
+          thisBooking.selectedTable = attr;
         } else {
           clicked.classList.remove('selected');
-          thisBooking.selectedTable.splice(index, 1);
+          thisBooking.selectedTable = '';
         }
       } else {
         window.alert('Stolik zajęty!');
@@ -175,7 +173,7 @@ class Booking{
     const thisBooking = this;
     for(let table of thisBooking.dom.tables){
       table.classList.remove('selected');
-      thisBooking.selectedTable = [];
+      thisBooking.selectedTable = '';
     }
   }
   
@@ -274,10 +272,6 @@ class Booking{
     fetch(url, options)
       .then(function (response) {
         return response.json();
-      })
-      .then(function (parsedResponse) {
-        console.log('parsedResponse', parsedResponse);
-        console.log(thisBooking.tableSelected); 
       })
       .then(function () {
         thisBooking.makeBooked(payload.date, payload.hour, payload.duration, payload.table);
