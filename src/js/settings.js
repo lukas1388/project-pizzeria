@@ -3,12 +3,17 @@ export const select = {
     menuProduct: '#template-menu-product',
     cartProduct: '#template-cart-product',
     bookingWidget: '#template-booking-widget',
+    homePage: '#template-home',
   },
   containerOf: {
     menu: '#product-list',
     cart: '#cart',
     pages: '#pages',
     booking: '.booking-wrapper',
+    home: '.home-wrapper',
+    bookingLink: '.booking-link',
+    orderLink: '.order-link',
+    homeLinks: '.home-link'
   },
   all: {
     menuProducts: '#product-list > .product',
@@ -115,7 +120,7 @@ export const settings = {
   db: {
     products: 'products',
     orders: 'orders',
-    url: '//localhost:3131',
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
     bookings: 'bookings',
     events: 'events',
     dateStartParamKey: 'date_gte',
@@ -129,4 +134,5 @@ export const templates = {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
   bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
 };

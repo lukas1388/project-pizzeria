@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="./vendor/range-slider.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,6 +22,7 @@
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
         <div class="main-nav">
+          <a href="#home">Home</a>
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
         </div>
@@ -62,6 +64,9 @@
   </header>
 
   <div id="pages">
+    <section id="home">
+      <div class="home-wrapper container"></div>
+    </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -164,6 +169,123 @@
     </li>
   </script>
 
+  <script id="template-home" type="text/x-handlebars-template">
+    <div class="book-and-order">
+      <div class="order-online box">
+        <a href="#order" class="order-link home-link">
+          <img src="images/home/pizza-1.jpg" class="book-and-order-background">
+          <div class="box-text">
+            <h1 class="box-heading">Order online</h1>
+            <p class="order-online-span">Order delicious food</p>
+          </div>
+        </a>
+      </div>
+      <div class="book-table box">
+        <a href="#booking" class="booking-link home-link">
+          <img src="images/home/pizza-2.jpg" class="book-and-order-background">
+          <div class="box-text">
+            <h1 class="box-heading">Book a table</h1>
+            <p class="book-table-span">Book your table online</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="opening-hours">
+      <h1 class="hours-heading hours">Opening hours</h1>
+      <p class="hours-paragraph hours">tue-sun, 12pm - 12am</p>
+    </div>
+
+    <!-- carousel -->
+    <div class="main-carousel" data-flickity='{ "autoPlay": true }'>
+      <div class="carousel-cell">
+        <div class="cell-image">
+          <img src="images/home/pizza-3.jpg" alt="">
+        </div>
+        <div class="cell-text">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aliquam varius risus nec lectus dictum ultricies quis id felis.
+            Curabitur lacinia mi ac odio placerat bibendum.
+            Etiam sed placerat ex.</p>
+          <span>Lorem Ipsum</span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="cell-image">
+          <img src="images/home/pizza-3.jpg" alt="">
+        </div>
+        <div class="cell-text">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aliquam varius risus nec lectus dictum ultricies quis id felis.
+            Curabitur lacinia mi ac odio placerat bibendum.
+            Etiam sed placerat ex.</p>
+          <span>Lorem Ipsum</span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="cell-image">
+          <img src="images/home/pizza-3.jpg" alt="">
+        </div>
+        <div class="cell-text">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aliquam varius risus nec lectus dictum ultricies quis id felis.
+            Curabitur lacinia mi ac odio placerat bibendum.
+            Etiam sed placerat ex.</p>
+          <span>Lorem Ipsum</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="gallery">
+      <div class="gallery-wrapper">
+        <img src="images/home/pizza-4.jpg" class="image" alt="">
+        <div class="icons">
+          <a href="#" ><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share-alt"></i></a>
+        </div>
+      </div>
+      <div class="gallery-wrapper">
+        <img src="images/home/pizza-5.jpg" class="image" alt="">
+        <div class="icons">
+          <a href="#" ><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share-alt"></i></a>
+        </div>
+      </div>
+      <div class="gallery-wrapper">
+        <img src="images/home/pizza-6.jpg" class="image" alt="">
+        <div class="icons">
+          <a href="#" ><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share-alt"></i></a>
+        </div>
+      </div>
+      <div class="gallery-wrapper">
+        <img src="images/home/pizza-7.jpg" class="image" alt="">
+        <div class="icons">
+          <a href="#" ><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share-alt"></i></a>
+        </div>
+      </div>
+      <div class="gallery-wrapper">
+        <img src="images/home/pizza-8.jpg" class="image" alt="">
+        <div class="icons">
+          <a href="#" ><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share-alt"></i></a>
+        </div>
+      </div>
+      <div class="gallery-wrapper">
+        <img src="images/home/pizza-9.jpg" class="image" alt="">
+        <div class="icons">
+          <a href="#" ><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share-alt"></i></a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><a href="#">See more on our instagram</a></footer>
+  </script>
+
   <script id="template-menu-product" type="text/x-handlebars-template">
     <article class="product"> <!-- product -->
 
@@ -243,6 +365,7 @@
     </article> <!-- .product -->
   </script>
 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="js/app.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
